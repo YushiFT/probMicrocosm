@@ -17,5 +17,5 @@ To install, open R and type:
 ```R
 install.packages("devtools")
 library("devtools")
-install_github("/probMicrocosm")
+install_github("YushiFT/probMicrocosm")
 ```
