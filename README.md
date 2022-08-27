@@ -1,7 +1,7 @@
 PMCosm: Probabilistic model for microbial-cosmos
 =======
 
-<span style="color: green"> We have transferred all source code to </span> <https://github.com/YushiFT/PMCosm>. This repository only serves as the reference for our paper (Tang et al. 2022) under review by ISME Communications. 
+IMPORTANT NOTE: We have transferred all source code to </span> <https://github.com/YushiFT/PMCosm>. This repository only serves as the reference for our paper (Tang et al. 2022) under review by ISME Communications. 
 
 The `PMCosm` package implements statistical inferences for microbial ecology analysis. This package provides methods for 
 
