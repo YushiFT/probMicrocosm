@@ -21,3 +21,28 @@ install.packages("devtools")
 library("devtools")
 install_github("YushiFT/PMCosm")
 ```
+
+Package overview
+----------------
+
+### Functions 
+* `calc_prior_parameters_mle`: Calculate MLE estimates for universal parameter trio for inferences about the admixed community structure. 
+* `classify_taxa`: Traditional relative-abundance-based methods to classify microbial taxa into rare or abundant biospheres.
+* `is_dispersion`: Hypothesis test for the existence of dispersion.
+* `is_overdispersion`: Hypothesis test for the existence of over-dispersion.
+* `is_zero_infla`: Check the existence of inflated zeros. 
+* `pca_simple`: A simplified principle component analysis for microbial data.
+* `refine_boundary`: Define a model-driven testable boundary between dispersal vangguards and dispersal laggards.
+
+### Quick start guide
+
+#### Deriving MLE estimates for the admixed structure of environmental microbial communities
+
+```R
+library(PMCosm)
+# import sample data from microbial communities in hangzhou bay
+data(hzmicrobe)
+param_trio <- calc_prior_parameters_mle(mic_bay)
+```
+
+
