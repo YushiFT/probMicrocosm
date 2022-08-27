@@ -1,7 +1,9 @@
 PMCosm: Probabilistic model for microbial-cosmos
 =======
 
-This `PMCosm` package implements statistical inferences for microbial ecology analysis. This package provides methods for 
+<span style="color: green"> We have transferred all source code to </span> <https://github.com/YushiFT/PMCosm>. This repository only serves as the reference for our paper (Tang et al. 2022) under review by ISME Communications. 
+
+The `PMCosm` package implements statistical inferences for microbial ecology analysis. This package provides methods for 
 
 * categorizing the admixed structure of microbial communities,
 * detecting influential microbes in both engineered and natural environments,
@@ -17,5 +19,5 @@ To install, open R and type:
 ```R
 install.packages("devtools")
 library("devtools")
-install_github("YushiFT/probMicrocosm")
+install_github("YushiFT/PMCosm")
 ```
