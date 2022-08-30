@@ -58,4 +58,29 @@ plot_trio(param_trio_bay, point_size=0.8, a=0.6, zoom_in=TRUE)
 plot_trio(param_trio_era, point_size=0.8, a=0.6)
 ```
 
+#### Categorize dispersal vanguards and laggards by identifying the model-driven testable boundary
+
+```R
+id_vag_lag_bay <- classify_vag_lag(mic_bay, param_trio_bay)
+id_vag_lag_era <- classify_vag_lag(mic_era, param_trio_era)
+# print ids of dispersal vanguards in bay
+print(id_vag_lag_bay$vanguards)
+# print ids of dispersal laggards in bay
+print(id_vag_lag_bay$laggards)
+# print ids of dispersal vanguards in era
+print(id_vag_lag_era$vanguards)
+# print ids of dispersal laggards in era
+print(id_vag_lag_era$laggards)
+```
+
+#### Visualize community structure as an admixture of dispersal vanguards and laggards
+
+```R
+plot_vag_lag(param_trio_bay, id_vag_lag_bay)
+plot_vag_lag(param_trio_era, id_vag_lag_era)
+```
+
+
+
+
 
