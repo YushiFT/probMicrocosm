@@ -27,12 +27,13 @@ Package overview
 ### Functions 
 * `calc_mle_trio`: Calculate MLE estimates for universal parameter trio for inferences about the admixed community structure. 
 * `classify_taxa`: Traditional relative-abundance-based methods to classify microbial taxa into rare or abundant biospheres.
+* `classify_vag_lag`: Define a model-driven testable boundary between dispersal vangguards and dispersal laggards.
 * `is_dispersion`: Hypothesis test for the existence of dispersion.
 * `is_overdispersion`: Hypothesis test for the existence of over-dispersion.
 * `is_zero_infla`: Check the existence of inflated zeros. 
 * `pca_simple`: A simplified principle component analysis for microbial data.
 * `plot_trio`: Graphic display of trio estimates to observe the Two-Wing pattern.
-* `refine_boundary`: Define a model-driven testable boundary between dispersal vangguards and dispersal laggards.
+
 
 ### Quick start guide
 
@@ -45,7 +46,7 @@ data(hzmicrobe)
 param_trio_bay <- calc_mle_trio(mic_bay, n_sample=10, replicates=3)
 param_trio_era <- calc_mle_trio(mic_era, n_sample=12, replicates=3)
 ```
-#### Visualize the Two-Wing admixed structure
+#### Visualize the Two-Wing admixed structure by trio parameters estimates
 
 ```R
 library(ggplot2)
@@ -79,6 +80,7 @@ print(id_vag_lag_era$laggards)
 plot_vag_lag(param_trio_bay, id_vag_lag_bay)
 plot_vag_lag(param_trio_era, id_vag_lag_era)
 ```
+
 
 
 
